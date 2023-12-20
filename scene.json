@@ -1,12 +1,15 @@
 {
+  "ecs7": true,
+  "runtimeVersion": "7",
   "display": {
-    "title": "Nightclub V9",
-    "favicon": "favicon_asset",
-    "navmapThumbnail": "scene-thumbnail.png"
+    "title": "Worlds Templates - Night Club",
+    "description": "Night Club Template - SDK7",
+    "navmapThumbnail": "images/scene-thumbnail.png",
+    "favicon": "favicon_asset"
   },
-  "owner": "",
+  "owner": "Decentraland Foundation",
   "contact": {
-    "name": "0x7a3891acf4f3b810992c4c6388f2e37357d7d3ab",
+    "name": "",
     "email": ""
   },
   "main": "bin/index.js",
@@ -80,21 +83,31 @@
     ],
     "base": "0,0"
   },
-  "source": {
-    "version": 1,
-    "origin": "builder",
-    "projectId": "3b84c811-f249-4e80-9595-1f2d1bbde806",
-    "point": {
-      "x": 0,
-      "y": 0
-    },
-    "rotation": "east",
-    "layout": {
-      "rows": 8,
-      "cols": 8
+  "spawnPoints": [
+    {
+      "name": "spawn1",
+      "default": true,
+      "position": {
+        "x": [
+          64
+        ],
+        "y": [
+          2
+        ],
+        "z": [
+          21
+        ]
+      },
+      "cameraTarget": {
+        "x": 64,
+        "y": 3,
+        "z": 64
+      }
     }
-  },
-  "allowedMediaHostnames": [],
-  "ecs7": true,
-  "runtimeVersion": "7"
+  ],
+  "requiredPermissions": [
+    "ALLOW_TO_TRIGGER_AVATAR_EMOTE",
+    "ALLOW_TO_MOVE_PLAYER_INSIDE_SCENE"
+  ],
+  "featureToggles": {}
 }
